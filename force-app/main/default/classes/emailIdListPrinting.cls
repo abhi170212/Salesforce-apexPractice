@@ -12,7 +12,7 @@ public static List<String> returnContactEmail(String accountName){
     // return the list of those emails 
 
     List<String> mailBox = new List<String>();
-    List<Account> accVar = [SELECT id FROM Account WHERE Name=:accountName];
+    List<Account> accVar = [SELECT id FROM Account WHERE Name=:accountName LIMIT 1];
     
     if(accVar.size() ==1){
         List<Contact> conVar = [SELECT id,Email FROM Contact WHERE AccountId =:accVar[0].id];
