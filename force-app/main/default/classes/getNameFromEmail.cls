@@ -9,7 +9,7 @@ public without sharing class getNameFromEmail {
         String extractedString = emailAddress.substringBefore('@');
         List<String> splittedNames= extractedString.split('_');
         if(splittedNames.size()==2){
-        fullName = splittedNames[0]+splittedNames[1];
+        fullName = splittedNames[0]+' '+splittedNames[1];
             }
     }
     
