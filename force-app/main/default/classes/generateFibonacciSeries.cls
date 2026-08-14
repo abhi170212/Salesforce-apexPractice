@@ -6,7 +6,7 @@ public  class generateFibonacciSeries {
         finalResult.add(m);
         finalResult.add(n);
 
-        for(Integer i=0;i<endNumber;i++){
+        for(Integer i=0;i<=endNumber;i++){
             Integer nextNumber = m+n;
             if(nextNumber >= endNumber) break;
             m=n;
